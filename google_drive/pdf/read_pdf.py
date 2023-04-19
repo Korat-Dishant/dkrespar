@@ -12,15 +12,27 @@ def readby_id_pdf(pdf_id):
 
     """
 
-    # authenticate with Google Drive API using OAuth2 credentials
     gauth = GoogleAuth()
-    # load saved OAuth2 credentials from file
+    # Try to load saved client credentials
     gauth.LoadCredentialsFile("mycreds.txt")
     if gauth.credentials is None:
-        # authorize the application to access the user's Google Drive
+        # Authenticate if they're not there
         gauth.LocalWebserverAuth()
-        # save the credentials to a file for next time
-        gauth.SaveCredentialsFile("mycreds.txt")
+    elif gauth.access_token_expired:
+        # Refresh them if expired
+        gauth.Refresh()
+    else:
+        # Initialize the saved creds
+        gauth.Authorize()
+    # Save the current credentials to a file
+    gauth.SaveCredentialsFile("mycreds.txt")
+
+
+
+
+
+
+
 
     # create GoogleDrive instance and get file by ID
     drive = GoogleDrive(gauth)
