@@ -17,11 +17,11 @@ pdfminer.six==20191110
 PyDrive==1.3.1
 PyPDF2==3.0.1
 pyresparser==1.0.6
-regex==2023.3.23
-spacy==3.5.2
+regex
+spacy
 spacy-legacy==3.0.12
 spacy-loggers==1.0.4
-uvicorn==0.21.1
+uvicorn
 textract
 
 
