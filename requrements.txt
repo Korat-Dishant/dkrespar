@@ -1,0 +1,27 @@
+docx2txt==0.8
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl#sha256=0964370218b7e1672a30ac50d72cdc6b16f7c867496f1d60925691188f4d2510
+fastapi
+google-api-core==2.11.0
+google-api-python-client==2.86.0
+google-auth==2.17.3
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==1.0.0
+gunicorn==20.1.0
+httplib2==0.22.0
+nltk==3.8.1
+numpy
+oauth2client==4.1.3
+oauthlib==3.2.1
+pandas
+pdfminer.six==20191110
+PyDrive==1.3.1
+PyPDF2==3.0.1
+pyresparser==1.0.6
+regex
+spacy
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+uvicorn
+textract
+
+
