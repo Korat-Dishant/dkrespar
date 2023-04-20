@@ -4,6 +4,15 @@
 3. use uvicorn to deploy and check api locally
 4. deploy api using any web service provider !
 
+
+## working with google doc and drive api
+NOTE : in my code i have used google doc and drive api to fetch text from url of publically available pdf/doc file !
+       for you to work this you would require to get your own client_sectects and credentials from google cloud 
+       
+if you dont want to go throug all that and just want to use model locally you can do that too by integrating docx_to_text.py and pdf_to_text.py python file with dkrespar.py
+
+
+
 ## checkout -
 
 (heroku or deta or render)
